@@ -1,15 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
-public class ChoosePlayerPanel : MonoBehaviour {
+namespace UI
+{
+    public class ChoosePlayerPanel : MonoBehaviour
+    {
+        public GameObject PlayerItemPrefab;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+        public GridLayoutGroup Grid;
+
+        public ScrollRect Scroll;
+
+
+        // Use this for initialization
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+    }
 }
+
