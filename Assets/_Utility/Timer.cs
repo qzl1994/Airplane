@@ -12,7 +12,7 @@ public class Timer {
     public Timer(float time,Action action,bool timeScale = true)
     {
         _timer = 0f;
-        this._timer = time;
+        this.time = time;
         _action = action;
         _timeScale = timeScale;
     }

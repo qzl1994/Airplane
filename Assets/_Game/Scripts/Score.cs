@@ -1,15 +1,21 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.UI;
 
-public class Score : MonoBehaviour {
+namespace Game
+{
+    public class Score : MonoBehaviour
+    {
+        private int _score;
+        public Text text;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+        void Start()
+        {
+            EventManager.ins.OnDestroyEnemy += enemy =>
+            {
+                _score += enemy.Score;
+                text.text = _score.ToString();
+            };
+        }
+    }
 }
+
