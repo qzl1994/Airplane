@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
-using System;
 
 namespace UI
 {
@@ -10,7 +9,8 @@ namespace UI
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            this.ChoosePlayerPanel.gameObject.SetActive(true);
+            //激活选择游戏对象面板
+            ChoosePlayerPanel.gameObject.SetActive(true);
         }
     }
 

@@ -7,6 +7,7 @@ namespace Game
     {
         public void OnPointerClick(PointerEventData eventData)
         {
+            //退出应用程序
             Application.Quit();
         }
     }

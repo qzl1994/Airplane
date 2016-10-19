@@ -9,7 +9,7 @@ namespace UI
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            this.ChoosePlayerPanel.gameObject.SetActive(false);
+            ChoosePlayerPanel.gameObject.SetActive(false);//停用选择玩家对象面板
         }
     }
 }

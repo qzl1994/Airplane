@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 namespace Game
 {
@@ -7,6 +6,7 @@ namespace Game
     {
         public Vector3 Speed;
 
+        //每帧向Speed方向移动相应距离
         void Update()
         {
             transform.Translate(Speed * Time.deltaTime);

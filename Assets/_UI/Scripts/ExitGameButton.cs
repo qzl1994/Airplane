@@ -7,8 +7,11 @@ namespace Game
     {
         public void OnPointerClick(PointerEventData eventData)
         {
-            Application.LoadLevel("Menu");
-            Time.timeScale = 1f;
+#pragma warning disable CS0618 // 类型或成员已过时
+            Application.LoadLevel("Menu");//加载菜单场景
+#pragma warning restore CS0618 // 类型或成员已过时
+
+            Time.timeScale = 1f;          //恢复时间缩放
         }
     }
 }

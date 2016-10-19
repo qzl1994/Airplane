@@ -11,8 +11,8 @@ namespace Game
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            Time.timeScale = 0f;
-            PauseDialog.SetActive(true);
+            Time.timeScale = 0f;//时间缩放设为0，暂停游戏
+            PauseDialog.SetActive(true);//激活暂停面板
         }
     }
 }

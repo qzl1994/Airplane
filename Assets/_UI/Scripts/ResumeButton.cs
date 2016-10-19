@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
-using System.Collections;
-using System;
 
 namespace Game
 {
@@ -11,8 +9,8 @@ namespace Game
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            Time.timeScale = 1.0f;
-            PauseDialog.SetActive(false);
+            Time.timeScale = 1.0f;//恢复时间缩放
+            PauseDialog.SetActive(false);//停用暂停面板
         }
     }
 }
