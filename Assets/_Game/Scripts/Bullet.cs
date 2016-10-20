@@ -4,11 +4,11 @@ namespace Game
 {
     public class Bullet : MonoBehaviour
     {
-        //爆炸特效
+        //爆炸特效预设体
         public GameObject ExplosionEffect;
 
         [System.NonSerialized]
-        public float Power; //攻击力
+        public float Power; //子弹攻击力
 
         //触发
         void OnTriggerEnter(Collider other)

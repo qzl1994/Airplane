@@ -6,7 +6,7 @@ namespace Game
     public class Enemy : MonoBehaviour
     {
         [System.NonSerialized]
-        public float Life;      //生命值
+        public float Life;      //敌人生命值
 
         [System.NonSerialized]
         public int Score;     //分数
